@@ -1,0 +1,28 @@
+# List of useful shell aliases
+
+# misc
+alias dfh="df -h"
+
+# ssh
+alias ssh-add-8hr="ssh-add -t 28800"
+alias ssh-add-day="ssh-add -t 86400"
+
+# docker
+alias dkrit="docker run -it"
+alias dkxit="docker exec -it"
+alias dkps="docker ps"
+alias dkpsa="docker ps -a"
+alias dkrmfall="docker ps -aq|xargs docker rm -f"
+alias dki="docker images"
+alias dkia="docker images -a"
+alias dkrmd="docker images -f dangling=true -q | xargs docker rmi"
+alias dkrmx="docker ps -aq | xargs docker rm"
+
+# docker-compose
+alias dc="docker-compose"
+alias dcup="docker-compose up"
+alias dcupd="docker-compose up -d"
+alias dcdown="docker-compose down"
+alias dcb="docker-compose build"
+alias dcr="docker-compose restart"
+alias dcbounce="docker-compose down; docker-compose up -d"
