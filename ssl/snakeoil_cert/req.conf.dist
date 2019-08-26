@@ -1,0 +1,29 @@
+[req]
+distinguished_name = req_distinguished_name
+x509_extensions = v3_req
+prompt = no
+
+[req_distinguished_name]
+C = __CONFIGURE_COUNTRY__
+ST = __CONFIGURE_COUNTY__
+L = __CONFIGURE_CITY__
+O = __CONFIGURE_ORGANISATION__
+OU = __CONFIGURE_ORG_UNIT__
+CN = snakeoil.__CONFIGURE_DOMAIN__
+
+[v3_req]
+keyUsage = keyEncipherment, dataEncipherment
+extendedKeyUsage = serverAuth
+subjectAltName = @alt_names
+
+[alt_names]
+DNS.1 = *.__CONFIGURE_DOMAIN__
+DNS.2 = *.__CONFIGURE_ANOTHER_DOMAIN__
+DNS.3 = *.__CONFIGURE_YET_ANOTHER_DOMAIN__
+DNS.4 = *.__CONFIGURE_YET_ANOTHER_DOMAIN__
+DNS.5 = *.__CONFIGURE_YET_ANOTHER_DOMAIN__
+DNS.6 = *.__CONFIGURE_YET_ANOTHER_DOMAIN__
+DNS.7 = *.__CONFIGURE_YET_ANOTHER_DOMAIN__
+DNS.8 = *.__CONFIGURE_YET_ANOTHER_DOMAIN__
+DNS.9 = *.__CONFIGURE_YET_ANOTHER_DOMAIN__
+
