@@ -10,7 +10,7 @@ The script dumps the database to the filesystem (gzip compressed), does a basic 
 * MySQL CLI (`mysqldump`)
 * `shred` (secure file deletion)
 
-## Usage
+## Usage
 
 The following command will backup the database `example-db` (taken from the `example-db.cnf` filename) to the S3 bucket path `s3://s3-bucket-name/some/prefix/...`:
 
