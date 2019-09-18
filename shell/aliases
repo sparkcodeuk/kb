@@ -1,6 +1,7 @@
 # List of useful shell aliases
 
 # misc
+alias cwd='basename $(realpath .)'
 alias dfh="df -h"
 
 # ssh
@@ -8,6 +9,7 @@ alias ssh-add-8hr="ssh-add -t 28800"
 alias ssh-add-day="ssh-add -t 86400"
 
 # docker
+alias dk="docker"
 alias dkrit="docker run -it"
 alias dkxit="docker exec -it"
 alias dkps="docker ps"
